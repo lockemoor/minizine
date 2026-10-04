@@ -1,17 +1,12 @@
 #import "@preview/framefit:0.1.0" : fit-copy
 #set page(margin: 0.5cm)
 
-#let center-offset = 40pt
+#let center-offset = 30pt
 
-#let left_cell(body) = block(width: 100%, height: auto, align(center)[
-  #rotate(90deg, origin: center)[#body]
-])
 
-#let right_cell(body) = block(width: 100%, height: auto, align(center)[
-  #rotate(-90deg, origin: center)[#body]
-])
-
-#let front_page = [#lorem(10)]
+#let front_page = align(center)[
+  -#lorem(50) \
+  -#lorem(7)]
 
 #let my_text = (
   front_page, [Item 2],
@@ -30,12 +25,12 @@
   ..my_text.enumerate().map(((index, body)) => {
     block(width: 100%, height: 100%)[
     #if calc.even(index) {
-      align(right, rotate(90deg, origin: right)[
-        #fit-copy(min:40%, max:100%)[
-        [#v(center-offset) #body ]]
+      align(right, rotate(90deg, origin: right, reflow: true)[
+        #fit-copy(min:100%, max:100%, only-if-overflow: true)[
+        #v(center-offset) #body ]
       ])
     } else {
-      align(left, rotate(-90deg, origin: left)[
+      align(left, rotate(-90deg, origin: left, reflow: true)[
       #fit-copy(min:40%, max:100%)[
        #v(center-offset) #body]])
     }]
