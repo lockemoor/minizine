@@ -1,5 +1,5 @@
 #import "@preview/framefit:0.1.0" : fit-copy
-#import "pages_template.typ": front_page, page_2, page_3, page_4, page_5, page_6, page_7, page_8
+#import "whiskey_sour_content.typ": front_page, page_2, page_3, page_4, page_5, page_6, page_7, page_8
 #set page(margin: 0.5cm)
 
 #let center-offset = 10pt
