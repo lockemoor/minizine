@@ -1,5 +1,5 @@
 #import "@preview/framefit:0.1.0" : fit-copy
-#import "whiskey_sour_content.typ": front_page, page_2, page_3, page_4, page_5, page_6, page_7, page_8
+#import "whiskey_sour_content.typ": front_page, page_2, page_3, page_4, page_5, page_6, page_7, page_8, credits
 #set page(margin: 0.5cm)
 
 #let center-offset = 10pt
@@ -11,7 +11,8 @@
   page_5, page_6,
   page_7, page_8,
 )
-#block(width: 100%, height: 100%)[
+#block(width: 100%, height: 97.94%)[
+  
 #grid(
   columns: (1fr, 1fr),
   stroke: 5pt + black,
@@ -33,4 +34,6 @@
           ]])
     }]
   })
-)]
+)
+]
+#align(bottom + left)[ #credits]

@@ -1,5 +1,13 @@
 #import "typography.typ": title_font, body_font
 
+#let credits = [
+  #set text(
+    font: body_font,
+    size: 5pt
+  )
+  created by: lukavrakun
+]
+
 /* Front Page
 */
 #let front_title =  [
