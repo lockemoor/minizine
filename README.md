@@ -27,7 +27,7 @@ Your compile target is zine_template.typ, so from your terminal navigate to this
 >`typst watch zine_template.typ` 
 
 (you might need to use `./zine_template.typ` on mac/linux or `.\zine_template` if running on windows). This will have typst continuously watching the file and rendering the pdf as you save you progress.
-Type out your text in the appropriate pages sections in `pages_template.typ`, add any additional formatting you like and after saving check the results by opening the rendered pdf (most likely will be named `zine_template.pdf`) in the same folder, if you can't see any of your changes check if you saved your progress in `pages_template.typ` or check the terminal for any errors.
+Type out your text in the appropriate pages sections in `pages_template.typ`, add any additional formatting you like and after saving check the results by opening the rendered pdf (most likely will be named `zine_template.pdf`) in the same folder, if you can't see any of your changes check if you saved your progress in `pages_template.typ` or check the terminal for any errors. If you are unsure how to format the zine, check out the zines in the minizines folder for examples.
 
 You can close the typst session by either closing the terminal window or running `Ctrl+c` in it.
 
